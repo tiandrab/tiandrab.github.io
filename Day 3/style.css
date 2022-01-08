@@ -1,0 +1,141 @@
+img{
+    margin-top:10px;
+    width:95%;
+    height:80%;
+
+}
+
+.citybox{
+    background-color:sandybrown;
+    width:90%;
+    height:800px;
+    text-align:center;
+    font-size:36px;
+    color:black;
+}
+
+.sub{
+    border:2px solid yellow;
+    width:49%;
+    height:49%;
+    float:left;
+}
+
+.pic1{
+    border: 7px solid white;
+    border-radius:3%;
+}
+
+.pic2{
+    border: 4px solid maroon;
+    padding:3px;
+}
+
+.pic3{
+    box-shadow: 8px 10px 8px black;
+}
+
+.pic4{
+    border: 5px solid mediumslateblue;
+    border-radius:50%;
+    padding:2px;
+}
+
+
+.first{
+    color:lightblue;
+}
+
+.second{
+    color:lightblue;
+    font-family:fantasy;
+}
+
+.third{
+    color:lightblue;
+    font-family:fantasy;
+    font-size:24px;
+}
+
+.fourth{
+    color:lightblue;
+    font-family:fantasy;
+    font-size:24px;
+    border: 3px solid lightcoral;
+}
+
+.fifth{
+    color:lightblue;
+    font-family:fantasy;
+    font-size:24px;
+    border: 3px solid lightcoral;
+    background-color:lightslategray;
+}
+
+.sixth{
+    color:lightblue;
+    font-family:fantasy;
+    font-size:24px;
+    border: 3px solid lightcoral;
+    background-color:lightslategray;
+    padding-left:10%;
+}
+
+.seventh{
+    color:lightblue;
+    font-family:fantasy;
+    font-size:24px;
+    border: 3px solid lightcoral;
+    background-color:lightslategray;
+    padding-left:3%;
+    width:20%;
+}
+
+.eighth{
+    color:lightblue;
+    font-family:fantasy;
+    font-size:24px;
+    border: 3px solid lightcoral;
+    background-color:lightslategray;
+    padding-left:3%;
+    width:20%;
+    text-shadow: 3px 6px 6px blue;
+}
+
+
+.box1{color:black; 
+    font-family:monospace;
+    background-color:lightblue}
+
+
+.styleHoliday{color:red;
+    background-color:orange;
+    border: 2px solid green;
+    /* text/box shadow 1st- horizontal 2nd-vertical 3rd-blur 4th-color */
+    text-shadow:-3px -6px 6px blue;
+    box-shadow:3px 6px 6px;
+    padding:5px;
+    width: 800px;
+    height:80px;
+    font-size:40px;
+    font-weight:bold;
+    font-family:arial;
+    }
+
+
+.firstbox{
+    background-color: lightgreen;
+    height:100px;
+    width:80%;
+    border:4px dashed lightpink;
+    /* padding:10%; */
+    /* padding-left:5%; */
+    /* first value-verticaal second value-horizontal */
+    padding: 10% 4%;
+    /* space outside the box */
+    margin: 5%;
+}
+
+/* img{float: right;
+    margin-left:30%;
+filter:grayscale(0.5);} */
