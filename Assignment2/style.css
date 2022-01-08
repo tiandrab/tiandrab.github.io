@@ -1,0 +1,25 @@
+.box{
+    border:4px solid coral;
+    width: 30%;
+    float:left;
+    margin:5px;
+    padding:10px;
+}
+
+
+.whole{
+    width:100%;
+    height:500px;
+    text-align:center;
+    color: black;
+}
+
+img{
+    width:100%;
+    height:300px;
+}
+
+.pic1{
+    width:25%;
+
+}
