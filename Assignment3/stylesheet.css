@@ -1,0 +1,81 @@
+
+/* OVERLAP*/
+html{
+  background-image:linear-gradient(to bottom right,teal, rgb(0, 247, 255), white);
+}
+
+  .pic{ 
+    width:90%;
+    padding-left:5%;
+}
+
+.container {
+  position: relative;
+  text-align:center;
+}
+.textbox{
+  position: absolute;
+  bottom: 10%;
+  right: 5%;
+  background-color: rgba(161, 159, 159, 0.205);
+
+}
+
+a{
+  text-decoration: none;
+}
+button:hover{
+  background-color: black;
+  color:white;
+  
+}
+
+/* CLOCK */
+.clock{
+  padding-left:15%;
+}
+
+.clockbox{
+  width:80%;
+  height:800px;
+  background-color:rgb(197, 197, 197);
+  position: relative;
+  background-image: url(images/clockimage.png);
+  background-size: 80% 700px;
+  background-repeat:no-repeat, no-repeat;
+  background-position:center, bottom;
+  position:relative;
+}
+
+.minute img {
+  display: inline;
+  position:absolute;
+  width: 27%;
+  height:20%;
+  transform: rotate(-90deg);
+  top: 40%;
+  left:50%;
+  animation: m-rotate 10s linear 2s infinite forwards;
+  transform-origin: left;
+  
+}
+
+@keyframes m-rotate{
+  100%{transform: rotate(270deg);}
+}
+
+.hour img{
+  display: inline;
+  position:absolute;
+  width: 20%;
+  height:20%;
+  top:40%;
+  left:50%;
+  animation: h-rotate 10s linear 2s infinite normal forwards;
+  transform-origin: left ;
+} 
+
+@keyframes h-rotate{
+  100%{transform: rotate(30deg);}
+}
+
