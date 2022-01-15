@@ -1,0 +1,136 @@
+body{
+    background-color:bisque;
+    width:100%;
+}
+  
+ /* part 1 */
+h1{
+    text-align: center;
+    font-size: 24px;
+    font-weight:bolder;
+    font-family: fantasy;
+    color:black;
+    text-shadow: -3px 3px  cadetblue, -3px -3px  pink;
+    margin-right:40%;
+}
+  
+.button{
+    text-align: center;
+    background-color: pink;
+    width:50%;
+    border:3px solid cadetblue;
+    border-radius:8px;
+    padding:25px;
+    margin-left:8%;
+}
+
+.button:hover{
+    background-color: white;
+}
+  
+a{
+    text-decoration: none;
+}
+  
+.box{
+    padding-left:7%;
+    border:10px double cadetblue;
+    border-radius: 10px;
+    width:30%;
+    min-width: 300px;
+    height:470px;
+    padding-top: 3%;
+    float: left;
+    margin-top:10%;
+    margin-left: 10%;
+    margin-bottom:10%;
+}
+  
+.box img{
+    border:3px solid black;
+    border-radius: 5px;
+}
+
+/* MODAL WINDOW */
+#full1, #full2{
+    background-color:rgba(56, 61, 61, 0.637);
+    width:100%;
+    height:800px;
+    position:fixed;
+    opacity:0%;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    pointer-events: none;
+}
+
+.window1{
+    width:40%;
+    height:500px;
+    background-color: cadetblue;
+    margin-left:25%;
+    padding-left:5%;
+    position:fixed;
+    margin-top:8%;
+
+}
+
+#full1:target{
+    opacity:1;
+    position: absolute;
+    pointer-events: all;
+}
+
+#full2:target{
+    opacity:1;
+    position: absolute;
+    pointer-events: all;
+}
+
+.minibox h1{
+    width:100%;
+    background-color: pink;
+    height:75px;
+    padding-top:5%;
+    color:white;
+}
+
+.minibox img{
+    width:50%;
+}
+
+.description{
+    font-size:24px;
+    color:white;
+}
+
+h3{
+    font-size:36px;
+    color:white;
+    float:right;
+    padding-right:15%;
+    padding-top:15%;
+}
+
+.mdlbutton{
+    text-align: center;
+    background-color: pink;
+    width:20%;
+    padding:25px;
+    margin-left:8%;
+}
+
+.mdlbutton:hover{
+    background-color: white;
+}
+
+#window2{
+    width:40%;
+    height:500px;
+    background-color: cadetblue;
+    margin-left:25%;
+    padding-left:5%;
+    position:fixed;
+    margin-top:8%;
+}
