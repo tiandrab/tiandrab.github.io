@@ -1,0 +1,82 @@
+body{
+    background-color:bisque;
+    width:100%;
+}
+
+/* part 1 */
+h1{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: fantasy;
+    color:black;
+    text-shadow: -3px 3px  cadetblue, -3px -3px  pink;
+    margin-right:40%;
+}
+
+.button{
+    text-align: center;
+    background-color: pink;
+    width:25%;
+    border:3px solid cadetblue;
+    border-radius:8px;
+    padding:25px;
+    margin-left:8%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.box{
+    padding-left:10%;
+    border:10px double cadetblue;
+    border-radius: 10px;
+    width:25%;
+    min-width: 300px;
+    height:450px;
+    padding-top: 1%;
+    float: left;
+    margin-top:10%;
+    margin-left: 10%;
+}
+
+.box img{
+    border:3px solid black;
+    border-radius: 5px;
+}
+
+
+
+/* part 2 */
+
+/* .mdl{
+
+    width:100%;
+    position: fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    opacity:0%;
+    pointer-events: none;
+}
+.mdl:target{
+    opacity:1;
+    pointer-events: all;
+}
+
+.msgblock{
+    background-color: white;
+    width:50%;
+    margin:auto;
+    height:300px;
+} */
+
+/* .close{
+    text-decoration: none;
+    background-color: cadetblue;
+    border:2px solid pink;
+    border-radius:99%;
+    padding:25px;
+} */
