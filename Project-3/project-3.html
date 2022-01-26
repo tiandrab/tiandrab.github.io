@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-3</title>
+    <link rel="stylesheet" href="project-3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <!-- flash -->
+    <div id="flash">  </div>
+    <!-- music -->
+      <audio id="winSound">
+        <source src="music/win.mp3" type="audio/wav">
+      </audio>
+      <audio id="failSound">
+        <source src="music/fail.mp3" type="audio/wav">
+      </audio>
+    <!-- The horizontal line on the top of the device -->
+    <div class="hr"> </div>
+    <!-- The circle on the bottom of the device -->
+
+    <div class="btn" onmouseover="over()" class="btn"> </div>
+
+
+
+    <!-- content -->
+      <main class="main-body">
+        <div class="header">
+          <h1>The Guessing Game</h1>
+          <h4>Guess a # between 1 and 100</h4>
+        </div>
+
+          <!-- FIRST BLOCK -->
+            <div class="first-block">
+
+              <div class="instruction">
+                <a class="button" href="#modal0"> Instructions</a>
+              </div>
+                <div class="scores">
+                  <p class = "score"> Score: 10</p>
+                  <p class = "highScore"> Highscore: 0</p>
+                </div>
+
+                <div class="reset">
+                    <button type="button" name="button"> reset</button>
+                </div>
+
+            </div>
+
+            <!-- SECOND BLOCK -->
+            <div class="second-block">
+                <img class="gif" id="game-pre" src="https://c.tenor.com/dFh3RESPVnkAAAAi/goma-cat-sleeping.gif" alt="some image">
+                <img class="gif" id="game-playing" src="https://c.tenor.com/Ji8vLfj669IAAAAi/thinking-goma.gif" alt="some image">
+                <img class="gif" id="game-lose" src="https://i.pinimg.com/originals/a0/49/60/a04960f00d4c96df70bdd04aa9b58dbd.gif" alt="some image">
+                <img class="gif" id="game-win" src="https://i.pinimg.com/originals/e4/97/e9/e497e9cfa0c8d4c0bfd78c2c508c6f09.gif" alt="some image">
+                <br>
+                <button class = "play"> Play </button>
+                <div class="innerBox">
+                  <!-- <button class = "play"> Play </button> -->
+                  <input class="input" type="text" placeholder=" Guess a number">
+                  <button class="check"> Check </button>
+                </div>
+                <p class="guessMessage">Guess a number</p>
+            </div>
+
+            <!-- FINAL BLOCK -->
+            <div class="guessHistory">
+                Guess History
+            </div>
+            <!-- <div class="instruction">
+              <a class="button" href="#modal0"> Instructions</a>
+            </div> -->
+              </main>
+        </div>
+
+      <!-- phone con -->
+
+    <!-- instructions -->
+    <!-- <div class="instruction">
+      <a class="button" href="#modal0"> Instructions</a>
+    </div> -->
+
+    <div class="modal">
+      <!-- MODAL WINDOW 0 -->
+        <div class="mod" id="modal0">
+          <div class="msgblock">
+            <div class="modal-header">
+              <a class="close"href="#">x</a><br>
+              <h3>How to Play</h3>
+
+            </div>
+            <div class="modal-Body">
+              <div class="modal-info">
+                <div class="modal-image">
+                  <img src="screenshot/homescreen.png" alt="instruction One">
+                </div>
+              </div>
+              <div class="next">
+                <a href="#modal1">Continue</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- End of  MODAL WINDOW 1-->
+    <!-- MODAL WINDOW 1 -->
+      <div class="mod" id="modal1">
+        <div class="msgblock">
+          <div class="modal-header">
+            <a class="close"href="#">x</a><br>
+            <h3>The game begins with a score of 10 and a highscore of 0.</h3>
+
+          </div>
+          <div class="modal-Body">
+            <div class="modal-info">
+              <div class="modal-image">
+                <img src="screenshot/scoretentozero.png" alt="instruction One">
+              </div>
+            </div>
+            <div class="next">
+              <a href="#modal2">1 out of 6</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- End of  MODAL WINDOW 1-->
+    <!-- MODAL WINDOW 2 -->
+    <div class="mod" id="modal2">
+      <div class="msgblock">
+        <div class="modal-header">
+          <a class="close"href="#">x</a><br>
+          <h3>You have 10 tries to guess the correct answer! Reach 0 and you lose</h3>
+
+        </div>
+        <div class="modal-Body">
+          <div class="modal-info">
+            <div class="modal-image">
+              <img src="screenshot/losescreen.png" alt="instruction One">
+            </div>
+          </div>
+          <div class="next">
+            <a href="#modal3">2 out of 6</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of  MODAL WINDOW 2-->
+    <!-- MODAL WINDOW 3 -->
+    <div class="mod" id="modal3">
+      <div class="msgblock">
+        <div class="modal-header">
+          <a class="close"href="#">x</a><br>
+          <h3>The goal is to guess and enter a number from 1 to 100</h3>
+
+        </div>
+        <div class="modal-Body">
+          <div class="modal-info">
+            <div class="modal-image">
+              <img src="screenshot/goal.png" alt="instruction One">
+            </div>
+          </div>
+          <div class="next">
+            <a href="#modal4">3 out of 6</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of  MODAL WINDOW 3-->
+    <!-- MODAL WINDOW 4 -->
+    <div class="mod" id="modal4">
+      <div class="msgblock">
+        <div class="modal-header">
+          <a class="close"href="#">x</a><br>
+          <h3>Keep guessing until you win and earn a new highscore!</h3>
+
+        </div>
+        <div class="modal-Body">
+          <div class="modal-info">
+            <div class="modal-image">
+              <img src="screenshot/winscreen.png" alt="instruction One">
+            </div>
+          </div>
+          <div class="next">
+            <a href="#modal5">4 out of 6</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of  MODAL WINDOW 4-->
+    <!-- MODAL WINDOW 5 -->
+    <div class="mod" id="modal5">
+      <div class="msgblock">
+        <div class="modal-header">
+          <a class="close"href="#">x</a><br>
+          <h3>You reach a new highscore when you win a game with the least amount of failed attempts as your previous runs</h3>
+
+        </div>
+        <div class="modal-Body">
+          <div class="modal-info">
+            <div class="modal-image">
+              <img src="screenshot/scoretentoten.png" alt="instruction One">
+            </div>
+          </div>
+          <div class="next">
+            <a href="#modal6">5 out of 6</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of  MODAL WINDOW 5-->
+    <!-- MODAL WINDOW 6 -->
+      <div class="mod" id="modal6">
+        <div class="msgblock">
+          <div class="modal-header">
+            <a class="close"href="#">x</a><br>
+            <h3>Let's Begin!</h3>
+
+          </div>
+          <div class="modal-Body">
+            <div class="modal-info">
+              <div class="modal-image">
+                <img src="screenshot/homescreen.png" alt="instruction One">
+              </div>
+            </div>
+            <div class="next">
+              <a href="#">6 out of 6</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- End of  MODAL WINDOW 6-->
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="project-3.js"></script>
+</body>
+</html>

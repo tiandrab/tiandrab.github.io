@@ -1,0 +1,359 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: url("https://static.planetminecraft.com/files/profile_banner/2381969_4.gif"), rgba(0, 0, 250, 0.1)  no-repeat center fixed;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+
+  /* overflow: hidden; */
+}
+
+
+.container{
+  height: 600px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* border: 2px solid blue; */
+}
+
+
+#flash{
+  position: relative;
+
+  margin: auto;
+  background-color: white;
+  height: 85%;
+  width: 85%;
+  filter: blur(1.5rem);
+
+  display: none;
+  animation: flashing 1s linear infinite;
+}
+
+
+@keyframes flashing {
+  50% {  opacity: 0;  }
+  100% { display: none;}
+}
+
+
+.play{
+  color: white;
+  background-color: green;
+  border: 2px dashed darkgreen;
+  border-radius: 40px;
+  width: 55%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.main-body{
+
+  position: absolute;
+  width: 65%;
+  height: 65%;
+  margin: auto;
+  border: 16px solid #1B1212;
+  border-left-width: 65px;
+  border-right-width: 65px;
+  border-radius: 36px;
+
+  color: white;
+
+  margin-top: 8%;
+  padding-left: 2%;
+  padding-right: 2%;
+
+  background-color: lightblue;
+
+  overflow-y:scroll;
+  overflow-x: hidden;
+}
+
+.hr{
+  display: block;
+  width: 5px;
+  height: 60px;
+  position: absolute;
+  bottom: 45%;
+  left: 13%;
+  background: grey;
+  border-radius: 10px;
+
+  z-index: 2;
+}
+
+.btn{
+  display: block;
+  width: 3%;
+  height: 6%;
+  position: absolute;
+  bottom: 45%;
+  right: 12%;
+  background: grey;
+  border-radius: 50px;
+
+  z-index: 2;
+}
+
+
+
+
+
+/* VVVcan be edited */
+.main-body::-webkit-scrollbar-track {
+  border: 1px solid #000;
+  padding: 2px 0;
+  background-color: #404040;
+}
+
+.main-body::-webkit-scrollbar {
+  width: 10px;
+}
+
+.main-body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #737272;
+  border: 1px solid #000;
+}
+/* ^^^can be edited */
+
+.gif{
+  margin-left: auto;
+  margin-right: auto;
+  height: 25%;
+  width: 25%;
+
+  padding: 10%;
+  padding-bottom: 0;
+
+  background-color: beige;
+  border: 1px solid ;
+  border-radius: 15px;
+
+
+}
+
+
+/* changes */
+
+.scores{
+  background-color: #ddadaf;
+  float: left;
+  border: 2px solid #ddadaf;
+  border-radius: 10px;
+
+  padding: 10px;
+
+  margin-top: 2%;
+  margin-bottom: 2%;
+
+  text-shadow: -1px 0 #bc8f8f, 0 1px #bc8f8f, 1px 0 #bc8f8f, 0 -1px #bc8f8f;
+}
+
+
+
+.reset button{
+  /* float: right; */
+  color: white;
+  text-decoration: none;
+  background-color: hotpink;
+  border: 2px solid hotpink;
+  border-radius: 10px;
+
+  padding: 2px;
+
+  margin-top: 150%;
+
+  text-shadow: -1px 0 #D90166, 0 1px #D90166, 1px 0 #D90166, 0 -1px #D90166;
+  ;
+}
+
+.reset button:hover{
+  color: yellow;
+}
+
+.guessHistory{
+  margin-top: 1%;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-left: 5%;
+
+  background-color: cadetblue;
+  border: 2px solid cadetblue;
+  border-radius: 10px;
+
+  width: 50%;
+}
+
+h1, h4{
+  text-align: center;
+  font-family: 'Mochiy Pop P One', sans-serif;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.second-block{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+
+  height: 55%;
+  width: 65%;
+  margin-top: 1%;
+
+  background-color: #a453ff;
+  border: 2px solid #a453ff;
+  border-radius: 10px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: 2%;
+
+}
+
+.second-block input{
+  width: 30%;
+  text-overflow: ellipsis;
+  ;
+}
+
+.check{
+  float: left;
+  width: 15%;
+  text-overflow: clip;
+
+  background-color: green;
+  color: white;
+  border: 2px solid green;
+  ;
+}
+
+.innerBox{
+  display: flex;
+  justify-content: center;
+}
+
+.second-block p{
+  text-align: center;
+}
+
+.first-block{
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  /* border:2px solid blue; */
+
+  margin-top: 1%;
+  width: 65%;
+  height: 20%;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+.second-block{
+  margin-top: 0;
+}
+
+/* instruction section  */
+.instruction{
+  /* position: relative; */
+  height: 5%;
+  width: 5%;
+  margin-top: 11%;
+}
+
+.instruction a{
+  text-decoration: none;
+  color: white;
+  background-color: hotpink;
+  padding: 2px;
+  border: 2px solid hotpink;
+  border-radius: 10px;
+
+  text-shadow: -1px 0 #D90166, 0 1px #D90166, 1px 0 #D90166, 0 -1px #D90166;
+}
+
+.instruction a:hover{
+  color: yellow;
+}
+
+.msgblock{
+  background-color: white;
+  border-radius:10px;
+  width:50%;
+  height: 75%;
+  margin: auto;
+  margin-top: 5%;
+
+  text-align: center;
+  font-family: 'Mochiy Pop P One', sans-serif;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+}
+
+.mod{
+  background-color: rgba(203, 195, 227,0.5);
+  width:100%;
+  position: fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  opacity:0;
+  pointer-events: none;
+}
+
+.mod:target{
+  opacity:1;
+  pointer-events: all;
+}
+
+.close{
+  float: right;
+  background-color: grey;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  border: 2px solid grey;
+  border-radius: 100px;
+  padding: 5px;
+}
+
+
+.next{
+  text-align: center;
+}
+
+.next a{
+  background-color: hotpink;
+  border: 2px solid hotpink;
+  border-radius: 10px;
+  width: 50%;
+  text-decoration: none;
+  color: white;
+}
+
+.modal img{
+  margin: 5%;
+  height: 275px;
+  width: 75%;
+}
