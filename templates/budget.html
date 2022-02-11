@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body class="bg-dark">
+
+    <div class="container">
+
+
+        <div class="row">
+            <div class="col">
+                <h1 class="text-light"> BUDGET APP</h1>
+                <div class=" bg-light border rounded px-4 m-3">
+                    <label for="formGroupExampleInput" class="form-label px-4">CREATE YOUR BUDGET</label>
+                    <input type="number" required name="budget" class="form-control px-4" id="formGroupExampleInput"
+                        placeholder="Budget Amount" value="0">
+                    <button type="button" class="btn btn-success m-3 px-2" id="btn1">CALCULATE</button>
+                </div>
+
+
+
+
+            </div>
+
+
+
+
+            <div class="col">
+
+                <h1 class="budget1 text-light m-3 border border border-success rounded "></h1>
+                <p class="  text-secondary m-3">Budget</p>
+            </div>
+            <div class="col">
+                <h1 class="expenses1 text-light m-3 border border-danger rounded"></h1>
+                <p class=" text-secondary m-3 rounded">Expenses</p>
+
+            </div>
+
+            <div class="col">
+                <h1 class="balance1 text-light m-3 border border-light rounded"></h1>
+                <p class=" text-secondary m-3">Balance</p>
+
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col">
+
+                <div class="bg-secondary border rounded p-3 m-3">
+                    <label for="" class="form-label">EXPENSES</label>
+                    <input type="text" name="description" required class="form-control"
+                        placeholder="Expenses Description">
+                    <input type="Number" name="expenses" required class="form-control" placeholder="Expenses Amount"
+                        value="0">
+                    <button class="btn btn-success mt-2 px-2" id="btn2">ADD EXPENSES</button>
+
+
+                </div>
+            </div>
+            <div class="col">
+
+                <h1 class="text-light">TRANSACTIONS</h1>
+                <div class="d-flex">
+                    <div class="desc col-4 text-light justify-content-start">Name</div>
+                    <div class="amount col-3 text-light justify-content-end">Amount</div>
+
+
+
+                    <div class="col-2 text-light justify-content-end"><a href="">Delete <i class='bx bx-trash'></i></a>
+
+
+
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+
+
+
+
+            $(document).ready(function () {
+
+
+                let expensesArray = [];
+
+                $("#btn1").click(function () {
+                    let _budget = $('input[name="budget"]').val();
+
+                    let _expenses = $('input[name="expenses"]').val();
+
+
+
+                    $(".budget1").html(`$${_budget}`);
+
+                });
+
+                $("#btn2").click(function btn2() {
+                    let _expenses = $('input[name="expenses"]').val();
+                    let _budget = $('input[name="budget"]').val();
+
+
+                    let _desc = $('input[name="description"]').val();
+
+
+
+                    $(".desc").append(`<ol>${_desc}</ol>`);
+                    $(".amount").append(`<ol>$${_expenses}</ol>`);
+                    $(".balance1").html(`$${_budget - _expenses}`);
+
+
+
+                    expensesArray.push(_expenses);
+                    console.log(expensesArray);
+
+
+                    let sum = 0; let i = expensesArray.length; while (i--) sum += parseInt(expensesArray[i]);
+
+                    $(".balance1").html(`$${_budget - sum}`);
+                    $(".expenses1").html(`$${sum}`);
+
+
+
+
+
+                });
+            });
+        </script>
+
+
+
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
