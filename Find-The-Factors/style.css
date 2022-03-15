@@ -1,0 +1,22 @@
+html{
+    background-color:blanchedalmond;
+    text-align: center;
+    color:chocolate;
+}
+
+li{
+    list-style-position: outside;
+    list-style-type:square;
+}
+
+h1{
+    color: rgb(82, 39, 8);
+    animation: title 2s linear infinite alternate;
+}
+
+@keyframes title {
+    0%{transform: skewX(40deg)};
+    50% {transform: skewX(-100deg)};
+    100%{transform: skewX(40deg)};
+}
+
